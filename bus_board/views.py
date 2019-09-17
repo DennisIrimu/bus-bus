@@ -170,8 +170,8 @@ def mobile_payment(request, ticket_id):
 
     # Any metadata that you would like to send along with this request
     # This metadata will be  included when we send back the final payment notification
-    metadata  = {"agentId"   : "654",
-                "productId" : "321"}
+    metadata  = {"agentId"   : "123",
+                "productId" : "546"}
     try:
     # Initiate the checkout. If successful, you will get back a transactionId
         transaction_id = gateway.initiateMobilePaymentCheckout(productName,
